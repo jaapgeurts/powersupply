@@ -39,22 +39,7 @@ $EndComp
 Connection ~ 9350 5850
 Wire Wire Line
 	9350 5850 9700 5850
-Wire Wire Line
-	9900 2600 10000 2600
-$Comp
-L Device:Amperemeter_DC MES1
-U 1 1 5DF4E0E5
-P 9700 2600
-F 0 "MES1" V 9990 2600 50  0000 C CNN
-F 1 "Amperemeter_DC" V 9899 2600 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" V 9700 2700 50  0001 C CNN
-F 3 "~" V 9700 2700 50  0001 C CNN
-	1    9700 2600
-	0    -1   -1   0   
-$EndComp
 Connection ~ 9350 2600
-Wire Wire Line
-	9500 2600 9350 2600
 Text Notes 7000 6150 0    50   ~ 0
 Optional cap:\ndelay V adjust\ncur. lim. is active
 Wire Wire Line
@@ -548,7 +533,7 @@ L Device:R_POT RV2
 U 1 1 5DF55154
 P 8300 5600
 F 0 "RV2" H 8230 5646 50  0000 R CNN
-F 1 "50k" H 8230 5555 50  0000 R CNN
+F 1 "10k" H 8230 5555 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8300 5600 50  0001 C CNN
 F 3 "~" H 8300 5600 50  0001 C CNN
 	1    8300 5600
@@ -559,7 +544,7 @@ L Device:R R14
 U 1 1 5DF54586
 P 8300 4800
 F 0 "R14" H 8370 4846 50  0000 L CNN
-F 1 "10k" H 8370 4755 50  0000 L CNN
+F 1 "1k8" H 8370 4755 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8230 4800 50  0001 C CNN
 F 3 "~" H 8300 4800 50  0001 C CNN
 	1    8300 4800
@@ -716,7 +701,7 @@ L Device:R_POT RV1
 U 1 1 5DF1E4D9
 P 4400 5450
 F 0 "RV1" H 4330 5496 50  0000 R CNN
-F 1 "50k" H 4330 5405 50  0000 R CNN
+F 1 "5k" H 4330 5405 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4400 5450 50  0001 C CNN
 F 3 "~" H 4400 5450 50  0001 C CNN
 	1    4400 5450
@@ -727,7 +712,7 @@ L Device:R R7
 U 1 1 5DF1D8E0
 P 4400 4950
 F 0 "R7" H 4470 4996 50  0000 L CNN
-F 1 "10k" H 4470 4905 50  0000 L CNN
+F 1 "1k" H 4470 4905 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4330 4950 50  0001 C CNN
 F 3 "~" H 4400 4950 50  0001 C CNN
 	1    4400 4950
@@ -756,17 +741,6 @@ Wire Wire Line
 Connection ~ 3800 2600
 Wire Wire Line
 	3800 3750 3800 2600
-$Comp
-L Device:R R3
-U 1 1 5DF1B980
-P 3800 3900
-F 0 "R3" H 3870 3946 50  0000 L CNN
-F 1 "3k3" H 3870 3855 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3730 3900 50  0001 C CNN
-F 3 "~" H 3800 3900 50  0001 C CNN
-	1    3800 3900
-	1    0    0    -1  
-$EndComp
 Connection ~ 3550 2600
 Wire Wire Line
 	4150 2600 4050 2600
@@ -975,4 +949,17 @@ Connection ~ 2150 4300
 Wire Wire Line
 	1700 4050 1700 3900
 Connection ~ 1700 3900
+Wire Wire Line
+	9350 2600 10000 2600
+$Comp
+L Device:R R3
+U 1 1 5DF1B980
+P 3800 3900
+F 0 "R3" H 3870 3946 50  0000 L CNN
+F 1 "3k3" H 3870 3855 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3730 3900 50  0001 C CNN
+F 3 "~" H 3800 3900 50  0001 C CNN
+	1    3800 3900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
